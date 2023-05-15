@@ -1,0 +1,487 @@
+@import "./bacs.css";
+
+.sidepanel {
+  height: 250px;
+  /* Specify a height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+}
+
+.openbtn:hover {
+  background-color: #d6d6d6;
+}
+
+
+
+
+/* Header style here ####################################################*/
+.headerCallBack {
+  img {
+    padding: 5px;
+    margin: 1px 10px;
+  }
+}
+
+
+
+// categorySec  Arun ******************************************************
+
+.categorySec {
+  a {
+    p {
+      color: #1C1C1C;
+      font-weight: 600;
+    }
+  }
+
+}
+
+
+
+
+.trendingWrap {
+  .item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .image {
+      position: relative;
+      transition: 1s all linear;
+
+      .isHover {
+        // backgroundColor:'',
+        transition: 0.2s all linear;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+
+        .inner {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          text-align: center;
+
+          a {
+            padding: 10px;
+          }
+        }
+
+      }
+
+    }
+
+
+    .content {
+      h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin-top: 10px;
+
+      }
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #1F1F1F;
+        text-align: center;
+        margin: 10px 0px;
+
+        span {
+          margin-left: 5px;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: #FF0000;
+          text-decoration-line: line-through;
+        }
+      }
+
+      .size {
+        margin-top: 10px;
+        padding: 0px 15px;
+
+        span {
+          width: 36px;
+          height: 36px;
+          border: 1px solid #E6E6E6;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 36px;
+          font-family: 'Montserrat', sans-serif;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.trendingWrap .item .image:hover .isHover {
+  opacity: 1;
+  backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+// Arun> Offer and discount wrapper
+
+.offerSection {
+  .item {
+    text-align: center;
+    padding: 36px 25px;
+    margin: 15px 0px;
+
+    img {
+      width: 170px;
+      height: 170px;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      color: #1C1C1C;
+      margin-top: 48px;
+      margin-bottom: 0px;
+    }
+
+    h3 {
+      margin-top: 22px;
+      margin-bottom: 0px;
+      font-weight: 600;
+      font-size: 84px;
+      line-height: 112px;
+      text-align: center;
+      color: #1C1C1C;
+    }
+
+    p {
+      margin-top: 22px;
+      margin-bottom: 0px;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      color: #1C1C1C;
+    }
+
+    a {
+      margin-top: 22px;
+      margin-bottom: 0px;
+      border: 1px solid #FFFFFF;
+      width: 170px;
+      height: 48px;
+      display: inline-block;
+      line-height: 48px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.2s all;
+
+      &:hover {
+        background: #770015;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// Arun #################################### footer style
+
+footer {
+  // background: #E0DFDE;
+  border: 1px solid #E0DFDE;
+  padding-top: 68px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+
+  a {
+    text-decoration: none;
+    color: #1C1C1C;
+
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .fmenu {
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #770015;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 25px;
+
+    }
+  }
+
+  .fsocila_media {
+    a {
+      margin-right: 15px;
+    }
+  }
+
+  .bottomFooter {
+    background: #20050A;
+
+    p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 34px;
+      color: #FFFFFF;
+      margin-bottom: 0px;
+      padding: 17px 15px;
+      text-align: center;
+    }
+  }
+}
+
+
+// ###################################################  _fotter
+
+.policyWrper {
+  background: #F5F4F2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+
+  .inerWrap {
+    // max-width: 1100px;
+    margin: 0px auto;
+
+    .inerItem {
+      margin: 20px 0px;
+      text-align: center;
+      border-left: 1px solid #FFC7D1;
+      border-right: 1px solid #FFC7D1;
+
+      p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #1C1C1C;
+        margin-top: 25px;
+        margin-bottom: 0px;
+
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:first-child {
+        border-left: none;
+      }
+    }
+  }
+
+  .polVactRight {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    // transform: translateY(50%);
+  }
+
+  .polVactLeft {
+    position: absolute;
+    // top: -50%;
+    left: 0;
+    top: 50%;
+    // transform: translateY(-50%);
+  }
+}
+
+
+
+
+
+.subcribeSec {
+  background: linear-gradient(97.3deg, #AB001E -6.23%, #770015 105.09%);
+  padding-bottom: 60px;
+  padding-top: 60px;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .formImgLeft {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .formImgRight {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+
+  .sinput {
+    input {
+      background: rgba(255, 255, 255, 0.32);
+      height: 68px;
+      color: #fff;
+    }
+
+    button {
+      height: 68px;
+      border: none;
+      // outline: none;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 29px;
+      text-align: center;
+      padding: 9px 23px;
+      color: #770015;
+      z-index: 9;
+    }
+  }
+
+
+@media(max-width:900px){
+  .subcribeSec{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    h2{
+      font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    br{
+      display: none;
+    }
+    }
+  }
+  .offerSection {
+    .item {
+      text-align: center;
+      padding: 25px 25px;
+      margin: 15px 0px;
+  
+      img {
+        width: 120px;
+        height: 120px;
+      }
+  
+      h4 {
+        font-size: 18px;
+        line-height: unset;
+        margin-top: 28px;
+      }
+  
+      h3 {
+        margin-top: 10px;
+        font-size: 40px;
+        line-height: unset;
+      }
+  
+      p {
+        margin-top: 22px;
+        font-size: 36px;
+        line-height: 48px;
+      }
+  
+      a {
+        margin-top: 22px;
+        line-height: 48px;
+        font-size: 16px;
+       
+  
+      }
+    }
+  }
+  
+}
